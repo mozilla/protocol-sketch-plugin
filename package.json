@@ -1,13 +1,15 @@
 {
-  "name": "sketch-plugin",
-  "version": "0.1.0",
+  "name": "mozilla-sketch-plugin",
+  "description": "A sketch plugin for pulling in Mozilla's brand colors.",
+  "author": "Michael McCombie <mmccombie@mozilla.com>",
+  "version": "1.0.0",
   "engines": {
     "sketch": ">=3.0"
   },
   "skpm": {
-    "name": "sketch-plugin",
+    "name": "Mozilla",
     "manifest": "src/manifest.json",
-    "main": "plugin.sketchplugin",
+    "main": "mozilla.sketchplugin",
     "assets": [
       "assets/**/*"
     ]
@@ -19,7 +21,8 @@
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
-    "@skpm/builder": "^0.4.0"
+    "@skpm/builder": "^0.4.0",
+    "photon-colors": "^3.0.1"
   },
-  "author": "Michael McCombie <michael@michaelm.cc>"
+  "dependencies": {}
 }

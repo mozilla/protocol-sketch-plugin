@@ -4,7 +4,7 @@
   "author": "Michael McCombie <mmccombie@mozilla.com>",
   "homepage": "https://github.com/mozilla/protocol-design-tokens/tree/master/sketch-plugin",
   "identifier": "com.sketchapp.michaelmccombie.mozilla",
-  "appcast" : "https://raw.githubusercontent.com/mozilla/protocol-design-tokens/master/sketch-plugin/appcast.xml",
+  "appcast": "https://raw.githubusercontent.com/mozilla/protocol-design-tokens/master/sketch-plugin/appcast.xml",
   "compatibleVersion": 3,
   "bundleVersion": 1,
   "icon": "icon.png",
@@ -12,12 +12,12 @@
     {
       "name": "Mozilla Protocol",
       "identifier": "palette-protocol",
-      "script": "./palettes/mozilla.js"
+      "script": "mozilla.js"
     },
     {
       "name": "Firefox Photon",
       "identifier": "palette-photon",
-      "script": "./palettes/photon.js"
+      "script": "photon.js"
     }
   ],
   "menu": {
@@ -26,10 +26,12 @@
       {
         "title": "Palettes",
         "items": [
-          "palette-protocol","palette-photon"
+          "palette-protocol",
+          "palette-photon"
         ]
       }
     ]
-  }
-
+  },
+  "version": "1.0.0",
+  "disableCocoaScriptPreprocessor": true
 }
