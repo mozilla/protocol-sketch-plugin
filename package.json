@@ -2,7 +2,7 @@
   "name": "mozilla-sketch-plugin",
   "description": "Replaces the global color palette with Mozilla color palettes.",
   "author": "",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "repository": "https://github.com/mozilla/protocol-sketch-plugin",
   "engines": {
     "sketch": ">=3.0"
