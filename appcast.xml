@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Mozilla Colors</title>
-    <link>https://github.com/mozilla/protocol-design-tokens</link>
+    <link>https://github.com/mozilla/protocol-sketch-plugin</link>
     <description>Replaces the global color palette with Mozilla color palettes.</description>
     <language>en</language>
       <item>
@@ -14,7 +14,7 @@
             </ul>
           ]]>
         </description>
-        <enclosure url="https://github.com/mozilla/protocol-design-tokens/archive/master.zip" sparkle:version="2.0.1" />
+        <enclosure url="https://github.com/mozilla/protocol-sketch-plugin/archive/master.zip" sparkle:version="2.0.1" />
       </item>
   </channel>
 </rss>
