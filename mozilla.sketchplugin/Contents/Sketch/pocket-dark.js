@@ -90,38 +90,47 @@ exports["default"] = function (context) {
         return MSImmutableColor.colorWithSVGString(SVGString).newMutableCounterpart();
     }
 
-    // Brand colors
-    var colorBrandPrimary = makeColor("#000000");
-    var colorBrandSecondary = makeColor("#FFFFFF");
+    // Row 1
+    var colorPocketDark1 = makeColor("#000000");
+    var colorPocketDark2 = makeColor("#1A1A1A");
+    var colorPocketDark3 = makeColor("#3F3F3F");
+    var colorPocketDark4 = makeColor("#828282");
+    var colorPocketDark5 = makeColor("#BDBDBD");
+    var colorPocketDark6 = makeColor("#E0E0E0");
+    var colorPocketDark7 = makeColor("#F2F2F2");
+    var colorPocketDark8 = makeColor("#FFFFFF");
 
-    var colorBrandNeonblue = makeColor("#00FFFF");
-    var colorBrandLemonyellow = makeColor("#FFF44F");
-    var colorBrandWarmred = makeColor("#FF4F5E");
-    var colorBrandNeongreen = makeColor("#54FFBD");
-    var colorBrandDarkpurple = makeColor("#6E008B");
-    var colorBrandDarkgreen = makeColor("#005E5E");
-    var colorBrandDarkblue = makeColor("#00458B");
-    var colorBrandDarkgray = makeColor("#959595");
-    var colorBrandLightgray = makeColor("#E7E5E2");
+    // Row 2
+    var colorPocketDark9 = makeColor("#EF4056");
+    var colorPocketDark10 = makeColor("#FCB643");
+    var colorPocketDark11 = makeColor("#83EDB8");
+    var colorPocketDark12 = makeColor("#1CB0A8");
+    var colorPocketDark13 = makeColor("#007A73");
+    var colorPocketDark14 = makeColor("#1EABF9");
+    var colorPocketDark15 = makeColor("#A240EF");
+    var colorPocketDark16 = makeColor("#FFFFFF");
 
-    // Text colors
-    var colorTextPrimary = makeColor("#000000");
-    var colorTextSecondary = makeColor("#484848");
-    var colorTextTertiary = makeColor("#666666");
+    // Row 3
+    var colorPocketDark17 = makeColor("#913A44");
+    var colorPocketDark18 = makeColor("#97743B");
+    var colorPocketDark19 = makeColor("#5B9075");
+    var colorPocketDark20 = makeColor("#27716D");
+    var colorPocketDark21 = makeColor("#195653");
+    var colorPocketDark22 = makeColor("#286F96");
+    var colorPocketDark23 = makeColor("#6A3991");
+    var colorPocketDark24 = makeColor("#162827");
 
-    // UI colors
-    var colorLink = makeColor("#00A7E0");
-    var colorOffblack = makeColor("#323232");
+    // Row 4
+    var colorPocketDark25 = makeColor("#FBCFD5");
+    var colorPocketDark26 = makeColor("#FEEDD0");
+    var colorPocketDark27 = makeColor("#E0FBED");
+    var colorPocketDark28 = makeColor("#BBE7E5");
+    var colorPocketDark29 = makeColor("#BFDDDC");
+    var colorPocketDark30 = makeColor("#8FD5FC");
+    var colorPocketDark31 = makeColor("#E7CFFB");
+    var colorPocketDark32 = makeColor("#FFFFFF");
 
-    // Button colors
-    var colorButtonLight = makeColor("#FFFFFF");
-    var colorButtonDark = makeColor("#00539F");
-    var colorButtonGreen = makeColor("#16DA00");
-    var colorButtonOrange = makeColor("#F26C23");
-    var colorButtonBlue = makeColor("#0A84FF");
-    var colorButtonRed = makeColor("#C13832");
-
-    app.globalAssets().setColors([colorBrandPrimary, colorBrandSecondary, colorBrandNeonblue, colorBrandLemonyellow, colorBrandWarmred, colorBrandNeongreen, colorBrandDarkpurple, colorBrandDarkgreen, colorBrandDarkblue, colorBrandDarkgray, colorBrandLightgray, colorTextPrimary, colorTextSecondary, colorTextTertiary, colorLink, colorOffblack, colorButtonLight, colorButtonDark, colorButtonGreen, colorButtonOrange, colorButtonBlue, colorButtonRed]);
+    app.globalAssets().setColors([colorPocketDark1, colorPocketDark2, colorPocketDark3, colorPocketDark4, colorPocketDark5, colorPocketDark6, colorPocketDark7, colorPocketDark8, colorPocketDark9, colorPocketDark10, colorPocketDark11, colorPocketDark12, colorPocketDark13, colorPocketDark14, colorPocketDark15, colorPocketDark16, colorPocketDark17, colorPocketDark18, colorPocketDark19, colorPocketDark20, colorPocketDark21, colorPocketDark22, colorPocketDark23, colorPocketDark24, colorPocketDark25, colorPocketDark26, colorPocketDark27, colorPocketDark28, colorPocketDark29, colorPocketDark30, colorPocketDark31, colorPocketDark32]);
 
     // print all the global gradients
     var gradients = app.globalAssets().gradients();

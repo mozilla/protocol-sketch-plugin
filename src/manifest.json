@@ -1,7 +1,7 @@
 {
-  "name": "Mozilla Sketch Plugin",
-  "description": "A sketch plugin for pulling in Mozilla's brand colors.",
-  "author": "Michael McCombie <mmccombie@mozilla.com>",
+  "name": "Mozilla",
+  "description": "A sketch plugin for replacing the global color palette with Mozilla branded colors.",
+  "author": "",
   "homepage": "https://github.com/mozilla/protocol-design-tokens/tree/master/sketch-plugin",
   "identifier": "com.sketchapp.michaelmccombie.mozilla",
   "appcast" : "https://raw.githubusercontent.com/mozilla/protocol-design-tokens/master/sketch-plugin/appcast.xml",
@@ -10,25 +10,83 @@
   "icon": "icon.png",
   "commands": [
     {
-      "name": "Mozilla Protocol",
-      "identifier": "palette-protocol",
-      "script": "./palettes/mozilla.js"
+      "name": "Firefox Brand",
+      "identifier": "palette-firefox-brand",
+      "script": "./palettes/firefox-brand.js"
     },
     {
-      "name": "Firefox Photon",
-      "identifier": "palette-photon",
-      "script": "./palettes/photon.js"
+      "name": "Firefox UI (Photon)",
+      "identifier": "palette-firefox-photon",
+      "script": "./palettes/firefox-photon.js"
+    },
+    {
+      "name": "Mozilla Brand",
+      "identifier": "palette-mozilla-brand",
+      "script": "./palettes/mozilla-brand.js"
+    },
+    {
+      "name": "Mozilla UI (Protocol)",
+      "identifier": "palette-mozilla-protocol",
+      "script": "./palettes/mozilla-protocol.js"
+    },
+    {
+      "name": "Common Voice",
+      "identifier": "palette-innovations-commonvoice",
+      "script": "./palettes/innovations-commonvoice.js"
+    },
+    {
+      "name": "Light Mode",
+      "identifier": "palette-pocket-light",
+      "script": "./palettes/pocket-light.js"
+    },
+    {
+      "name": "Dark Mode",
+      "identifier": "palette-pocket-dark",
+      "script": "./palettes/pocket-dark.js"
+    },
+    {
+      "name": "Sepia Mode",
+      "identifier": "palette-pocket-sepia",
+      "script": "./palettes/pocket-sepia.js"
+    },
+    {
+      "name": "Sketch Default",
+      "identifier": "palette-sketch",
+      "script": "./palettes/sketch.js"
     }
   ],
   "menu": {
-    "title": "Mozilla",
+    "title": "Mozilla Colors",
     "items": [
       {
-        "title": "Palettes",
+        "title": "Firefox",
         "items": [
-          "palette-protocol","palette-photon"
+          "palette-firefox-brand",
+          "palette-firefox-photon"
         ]
-      }
+      },
+      {
+        "title": "Mozilla",
+        "items": [
+          "palette-mozilla-brand",
+          "palette-mozilla-protocol"
+        ]
+      },
+      {
+        "title": "Open Innovations",
+        "items": [
+          "palette-innovations-commonvoice"
+        ]
+      },
+      {
+        "title": "Pocket",
+        "items": [
+          "palette-pocket-light",
+          "palette-pocket-dark",
+          "palette-pocket-sepia"
+        ]
+      },
+      "palette-sketch"
     ]
   }
 

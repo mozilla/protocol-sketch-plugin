@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Mozilla Sketch Plugin</title>
+    <title>Mozilla</title>
     <link>https://github.com/mozilla/protocol-design-tokens</link>
-    <description>A Sketch plugin for displaying Mozilla color palettes.</description>
+    <description>A sketch plugin for replacing the global color palette with Mozilla branded colors.</description>
     <language>en</language>
       <item>
-        <title>Version 1.0</title>
+        <title>Version 2.0</title>
         <description>
           <![CDATA[
             <ul>
@@ -14,7 +14,7 @@
             </ul>
           ]]>
         </description>
-        <enclosure url="https://github.com/mozilla/protocol-design-tokens/archive/master.zip" sparkle:version="1.0" />
+        <enclosure url="https://github.com/mozilla/protocol-design-tokens/archive/master.zip" sparkle:version="2.0" />
       </item>
   </channel>
 </rss>

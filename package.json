@@ -1,8 +1,8 @@
 {
   "name": "mozilla-sketch-plugin",
-  "description": "A sketch plugin for pulling in Mozilla's brand colors.",
-  "author": "Michael McCombie <mmccombie@mozilla.com>",
-  "version": "1.0.0",
+  "description": "A sketch plugin for replacing the global color palette with Mozilla branded colors.",
+  "author": "",
+  "version": "2.0.0",
   "engines": {
     "sketch": ">=3.0"
   },

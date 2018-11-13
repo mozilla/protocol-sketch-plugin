@@ -12,36 +12,20 @@ export default function(context) {
       return MSImmutableColor.colorWithSVGString(SVGString).newMutableCounterpart();
   }
 
-  // Brand colors
+  // Row 1
   var colorBrandPrimary     = makeColor("#000000");
   var colorBrandSecondary   = makeColor("#FFFFFF");
-
   var colorBrandNeonblue    = makeColor("#00FFFF");
   var colorBrandLemonyellow = makeColor("#FFF44F");
   var colorBrandWarmred     = makeColor("#FF4F5E");
   var colorBrandNeongreen   = makeColor("#54FFBD");
   var colorBrandDarkpurple  = makeColor("#6E008B");
   var colorBrandDarkgreen   = makeColor("#005E5E");
+
+  // Row 2
   var colorBrandDarkblue    = makeColor("#00458B");
   var colorBrandDarkgray    = makeColor("#959595");
   var colorBrandLightgray   = makeColor("#E7E5E2");
-
-  // Text colors
-  var colorTextPrimary      = makeColor("#000000");
-  var colorTextSecondary    = makeColor("#484848");
-  var colorTextTertiary     = makeColor("#666666");
-
-  // UI colors
-  var colorLink             = makeColor("#00A7E0");
-  var colorOffblack         = makeColor("#323232");
-
-  // Button colors
-  var colorButtonLight      = makeColor("#FFFFFF");
-  var colorButtonDark       = makeColor("#00539F");
-  var colorButtonGreen      = makeColor("#16DA00");
-  var colorButtonOrange     = makeColor("#F26C23");
-  var colorButtonBlue       = makeColor("#0A84FF");
-  var colorButtonRed        = makeColor("#C13832");
 
   app.globalAssets().setColors([
     colorBrandPrimary,
@@ -54,18 +38,7 @@ export default function(context) {
     colorBrandDarkgreen,
     colorBrandDarkblue,
     colorBrandDarkgray,
-    colorBrandLightgray,
-    colorTextPrimary,
-    colorTextSecondary,
-    colorTextTertiary,
-    colorLink,
-    colorOffblack,
-    colorButtonLight,
-    colorButtonDark,
-    colorButtonGreen,
-    colorButtonOrange,
-    colorButtonBlue,
-    colorButtonRed
+    colorBrandLightgray
   ]);
 
   // print all the global gradients
