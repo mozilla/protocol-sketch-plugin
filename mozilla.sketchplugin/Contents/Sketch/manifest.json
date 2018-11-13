@@ -1,6 +1,6 @@
 {
-  "name": "Mozilla",
-  "description": "A sketch plugin for replacing the global color palette with Mozilla branded colors.",
+  "name": "Mozilla Colors",
+  "description": "Replaces the global color palette with Mozilla color palettes.",
   "author": "",
   "homepage": "https://github.com/mozilla/protocol-design-tokens/tree/master/sketch-plugin",
   "identifier": "com.sketchapp.michaelmccombie.mozilla",
@@ -89,6 +89,6 @@
       "palette-sketch"
     ]
   },
-  "version": "2.0.0",
+  "version": "2.0.1",
   "disableCocoaScriptPreprocessor": true
 }
