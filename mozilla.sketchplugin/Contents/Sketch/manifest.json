@@ -12,7 +12,8 @@
     {
       "name": "Firefox Brand",
       "identifier": "palette-firefox-brand",
-      "script": "firefox-brand.js"
+      "script": "firefox-brand.js",
+      "shortcut": "ctrl shift f"
     },
     {
       "name": "Firefox UI (Photon)",
@@ -22,12 +23,14 @@
     {
       "name": "Mozilla Brand",
       "identifier": "palette-mozilla-brand",
-      "script": "mozilla-brand.js"
+      "script": "mozilla-brand.js",
+      "shortcut": "ctrl shift m"
     },
     {
       "name": "Mozilla UI (Protocol)",
       "identifier": "palette-mozilla-protocol",
-      "script": "mozilla-protocol.js"
+      "script": "mozilla-protocol.js",
+      "shortcut": "ctrl shift z"
     },
     {
       "name": "Common Voice",
@@ -37,7 +40,8 @@
     {
       "name": "Light Mode",
       "identifier": "palette-pocket-light",
-      "script": "pocket-light.js"
+      "script": "pocket-light.js",
+      "shortcut": "ctrl shift p"
     },
     {
       "name": "Dark Mode",
