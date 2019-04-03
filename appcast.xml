@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Mozilla Colors</title>
+    <title>Mozilla Styles</title>
     <link>https://github.com/mozilla/protocol-sketch-plugin</link>
     <description>Replaces the global color palette with Mozilla color palettes.</description>
     <language>en</language>
       <item>
-        <title>Version 2.0.3</title>
+        <title>Version 3.0.0</title>
         <description>
           <![CDATA[
             <ul>
-              <li>First commit!</li>
+              <li>Major update v3.0</li>
             </ul>
           ]]>
         </description>
-        <enclosure url="https://github.com/mozilla/protocol-sketch-plugin/archive/master.zip" sparkle:version="2.0.3" />
+        <enclosure url="https://github.com/mozilla/protocol-sketch-plugin/archive/master.zip" sparkle:version="3.0.0" />
       </item>
   </channel>
 </rss>

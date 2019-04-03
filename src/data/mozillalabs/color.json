@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Light Teal",
+    "value": "#54FFBD"
+  },
+  {
+    "name": "Teal",
+    "value": "#008787"
+  },
+  {
+    "name": "Dark Teal",
+    "value": "#005E87"
+  },
+  {
+    "name": "Purple",
+    "value": "#C139E6"
+  },
+  {
+    "name": "Dark Purple",
+    "value": "#6E008B"
+  },
+  {
+    "name": "Dark Gray",
+    "value": "#959595"
+  },
+  {
+    "name": "Light Gray",
+    "value": "#E7E5E2"
+  },
+  {
+    "name": "Background",
+    "value": "#FFFFFF"
+  },
+  {
+    "name": "Text",
+    "value": "#20123A"
+  },
+  {
+    "name": "Link",
+    "value": "#0060df"
+  },
+  {
+    "name": "Link:Visited",
+    "value": "#8000d7"
+  }
+]

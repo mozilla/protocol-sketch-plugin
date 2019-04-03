@@ -1,85 +1,83 @@
 {
-  "name": "Mozilla Colors",
-  "description": "Replaces the global color palette with Mozilla color palettes.",
+  "name": "Mozilla Styles",
+  "description": "Adds text styles, layer styles, and fills for Mozilla products.",
   "author": "",
   "homepage": "https://github.com/mozilla/protocol-sketch-plugin",
   "identifier": "com.sketchapp.michaelmccombie.mozilla",
-  "appcast" : "https://raw.githubusercontent.com/mozilla/protocol-sketch-plugin/master/appcast.xml",
-  "compatibleVersion": 3,
+  "appcast": "https://raw.githubusercontent.com/mozilla/protocol-sketch-plugin/master/appcast.xml",
+  "compatibleVersion": 54,
   "bundleVersion": 1,
   "icon": "icon.png",
   "commands": [
     {
-      "name": "Firefox Brand",
-      "identifier": "palette-firefox-brand",
-      "script": "./palettes/firefox-brand.js",
+      "name": "Firefox",
+      "identifier": "palette-firefox",
+      "script": "./scripts/firefox.js",
+      "handlers" : {
+        "run" : "onRun"
+      },
       "shortcut": "ctrl shift f"
     },
     {
-      "name": "Firefox UI (Photon)",
-      "identifier": "palette-firefox-photon",
-      "script": "./palettes/firefox-photon.js"
-    },
-    {
-      "name": "Mozilla Brand",
-      "identifier": "palette-mozilla-brand",
-      "script": "./palettes/mozilla-brand.js",
+      "name": "Mozilla",
+      "identifier": "palette-mozilla",
+      "script": "./scripts/mozilla.js",
+      "handlers" : {
+        "run" : "onRun"
+      },
       "shortcut": "ctrl shift m"
     },
     {
-      "name": "Mozilla UI (Protocol)",
-      "identifier": "palette-mozilla-protocol",
-      "script": "./palettes/mozilla-protocol.js",
-      "shortcut": "ctrl shift z"
-    },
-    {
-      "name": "Common Voice",
-      "identifier": "palette-innovations-commonvoice",
-      "script": "./palettes/innovations-commonvoice.js"
+      "name": "Mozilla Labs",
+      "identifier": "palette-mozilla-labs",
+      "script": "./scripts/mozillalabs.js",
+      "handlers" : {
+        "run" : "onRun"
+      }
     },
     {
       "name": "Light Mode",
       "identifier": "palette-pocket-light",
-      "script": "./palettes/pocket-light.js",
+      "script": "./scripts/pocketlight.js",
+      "handlers" : {
+        "run" : "onRun"
+      },
       "shortcut": "ctrl shift p"
     },
     {
       "name": "Dark Mode",
       "identifier": "palette-pocket-dark",
-      "script": "./palettes/pocket-dark.js"
+      "script": "./scripts/pocketdark.js",
+      "handlers" : {
+        "run" : "onRun"
+      }
     },
     {
       "name": "Sepia Mode",
       "identifier": "palette-pocket-sepia",
-      "script": "./palettes/pocket-sepia.js"
+      "script": "./scripts/pocketsepia.js",
+      "handlers" : {
+        "run" : "onRun"
+      }
     },
     {
-      "name": "Sketch Default",
-      "identifier": "palette-sketch",
-      "script": "./palettes/sketch.js"
+      "name": "Clear Styles",
+      "identifier": "clear-styles",
+      "script": "./scripts/clearstyles.js",
+      "handlers" : {
+        "run" : "onRun"
+      }
     }
   ],
   "menu": {
-    "title": "Mozilla Colors",
+    "title": "Mozilla Styles",
     "items": [
-      {
-        "title": "Firefox",
-        "items": [
-          "palette-firefox-brand",
-          "palette-firefox-photon"
-        ]
-      },
+      "palette-firefox",
       {
         "title": "Mozilla",
         "items": [
-          "palette-mozilla-brand",
-          "palette-mozilla-protocol"
-        ]
-      },
-      {
-        "title": "Open Innovations",
-        "items": [
-          "palette-innovations-commonvoice"
+          "palette-mozilla",
+          "palette-mozilla-labs"
         ]
       },
       {
@@ -90,8 +88,8 @@
           "palette-pocket-sepia"
         ]
       },
-      "palette-sketch"
+      "-",
+      "clear-styles"
     ]
   }
-
 }

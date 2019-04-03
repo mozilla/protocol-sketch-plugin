@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Text",
+    "value": "#20123A"
+  },
+  {
+    "name": "Background",
+    "value": "#FFFFFF"
+  },
+  {
+    "name": "Link",
+    "value": "#0060DF"
+  },
+  {
+    "name": "Link (Visited)",
+    "value": "#9059FF"
+  },
+  {
+    "name": "Pink 50",
+    "value": "#FF298A"
+  },
+  {
+    "name": "Red 50",
+    "value": "#FF4F5E"
+  },
+  {
+    "name": "Orange 50",	
+    "value": "#FF7139"
+  },
+  {
+    "name": "Yellow 30",	
+    "value": "#FFD567"
+  },
+  {
+    "name": "Blue 50",	
+    "value": "#0060DF"
+  },
+  {
+    "name": "Violet 50",	
+    "value": "#9059FF"
+  },
+  {
+    "name": "Purple 50",	
+    "value": "#B833E1"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Neon Blue",
+    "value": "#00ddff",
+    "token": "$brand-neon-blue"
+  },
+  {
+    "name": "Lemon Yellow",
+    "value": "#FFFF98",
+    "token": "$brand-lemon-yellow"
+  },
+  {
+    "name": "Warm Red",
+    "value": "#ff4f5e",
+    "token": "$brand-warm-red"
+  },
+  {
+    "name": "Neon Green",
+    "value": "#54ffbd",
+    "token": "$brand-neon-green"
+  },
+  {
+    "name": "Dark Purple",
+    "value": "#722291",
+    "token": "$brand-dark-purple"
+  },
+  {
+    "name": "Dark Green",
+    "value": "#005e5e",
+    "token": "$brand-dark-green"
+  },
+  {
+    "name": "Dark Blue",
+    "value": "#073072",
+    "token": "$brand-dark-blue"
+  },
+  {
+    "name": "Black",
+    "value": "#000000",
+    "token": "$color-black"
+  },
+  {
+    "name": "White",
+    "value": "#ffffff",
+    "token": "$color-white"
+  },
+  {
+    "name": "Gray",
+    "value": "#ededf0",
+    "token": "$color-gray"
+  },
+  {
+    "name": "Link",
+    "value": "#0060df",
+    "token": "$color-link"
+  },
+  {
+    "name": "Link:Hover",
+    "value": "#003eaa",
+    "token": "$color-link-hover"
+  },
+  {
+    "name": "Link:Visited",
+    "value": "#8000d7",
+    "token": "$color-link-visited"
+  },
+  {
+    "name": "Link:Visited:Hover",
+    "value": "#6200a4",
+    "token": "$color-link-visited-hover"
+  }
+]

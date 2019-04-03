@@ -1,0 +1,198 @@
+[
+  {
+    "name": "Yellow 10",
+    "value": "#FFFF98"
+  },
+  {
+    "name": "Orange 30",
+    "value": "#FFA266"
+  },
+  {
+    "name": "Red 30",
+    "value": "#FF848B"
+  },
+  {
+    "name": "Pink 30",
+    "value": "#FF6BBA"
+  },
+  {
+    "name": "Purple 30",
+    "value": "#F770FF"
+  },
+  {
+    "name": "Violet 30",
+    "value": "#C689FF"
+  },
+  {
+    "name": "Blue 20",
+    "value": "#00DDFF"
+  },
+  {
+    "name": "Green 40",
+    "value": "#54FFBD"
+  },
+  {
+    "name": "Yellow 20",
+    "value": "#FFEA80"
+  },
+  {
+    "name": "Orange 40",
+    "value": "#FF8A50"
+  },
+  {
+    "name": "Red 40",
+    "value": "#FF6A75"
+  },
+  {
+    "name": "Pink 40",
+    "value": "#FF4AA2"
+  },
+  {
+    "name": "Purple 40",
+    "value": "#D74CF0"
+  },
+  {
+    "name": "Violet 40",
+    "value": "#AB71FF"
+  },
+  {
+    "name": "Blue 40",
+    "value": "#0090ED"
+  },
+  {
+    "name": "Green 50",
+    "value": "#3FE1B0"
+  },
+  {
+    "name": "Yellow 30",
+    "value": "#FFD567"
+  },
+  {
+    "name": "Orange 50",
+    "value": "#FF7139"
+  },
+  {
+    "name": "Red 50",
+    "value": "#FF4F5E"
+  },
+  {
+    "name": "Pink 50",
+    "value": "#FF298A"
+  },
+  {
+    "name": "Purple 50",
+    "value": "#B833E1"
+  },
+  {
+    "name": "Violet 50",
+    "value": "#9059FF"
+  },
+  {
+    "name": "Blue 50",
+    "value": "#0060DF"
+  },
+  {
+    "name": "Green 60",
+    "value": "#2AC3A2"
+  },
+  {
+    "name": "Yellow 40",
+    "value": "#FFBD4F"
+  },
+  {
+    "name": "Orange 60",
+    "value": "#E25920"
+  },
+  {
+    "name": "Red 60",
+    "value": "#E22850"
+  },
+  {
+    "name": "Pink 60",
+    "value": "#E31587"
+  },
+  {
+    "name": "Purple 60",
+    "value": "#952BB9"
+  },
+  {
+    "name": "Violet 60",
+    "value": "#7542E5"
+  },
+  {
+    "name": "Blue 60",
+    "value": "#0250BB"
+  },
+  {
+    "name": "Green 70",
+    "value": "#008787"
+  },
+  {
+    "name": "Yellow 50",
+    "value": "#FFA436"
+  },
+  {
+    "name": "Orange 70",
+    "value": "#CC3D00"
+  },
+  {
+    "name": "Red 70",
+    "value": "#C50042"
+  },
+  {
+    "name": "Pink 70",
+    "value": "#C60084"
+  },
+  {
+    "name": "Purple 70",
+    "value": "#722291"
+  },
+  {
+    "name": "Violet 70",
+    "value": "#592ACB"
+  },
+  {
+    "name": "Blue 80",
+    "value": "#09204D"
+  },
+  {
+    "name": "Green 80",
+    "value": "#005E5E"
+  },
+  {
+    "name": "Gray 90",
+    "value": "#202340"
+  },
+  {
+    "name": "Gray 80",
+    "value": "#42425A"
+  },
+  {
+    "name": "Gray 70",
+    "value": "#5E5E72"
+  },
+  {
+    "name": "Gray 60",
+    "value": "#7A7A8B"
+  },
+  {
+    "name": "Gray 50",
+    "value": "#9595A3"
+  },
+  {
+    "name": "Gray 40",
+    "value": "#B1B1BC"
+  },
+  {
+    "name": "Gray 30",
+    "value": "#CDCDD4"
+  },
+  {
+    "name": "Gray 20",
+    "value": "#EDEDF0"
+  },
+  {
+    "name": "Gray 10",
+    "value": "#F9F9F9"
+  }
+]

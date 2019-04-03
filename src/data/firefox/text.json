@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Heading XXL",
+    "fontFamily": "Firefox Sharp Sans",
+    "fontWeight": 9,
+    "fontSize": 64,
+    "lineHeight": 70,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Heading XL",
+    "fontFamily": "Firefox Sharp Sans",
+    "fontWeight": 9,
+    "fontSize": 56,
+    "lineHeight": 62,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Heading LG",
+    "fontFamily": "Firefox Sharp Sans",
+    "fontWeight": 9,
+    "fontSize": 48,
+    "lineHeight": 53,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Heading MD",
+    "fontFamily": "Firefox Sharp Sans",
+    "fontWeight": 9,
+    "fontSize": 40,
+    "lineHeight": 44,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Heading SM",
+    "fontFamily": "Firefox Sharp Sans",
+    "fontWeight": 9,
+    "fontSize": 32,
+    "lineHeight": 35,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Heading XS",
+    "fontFamily": "Firefox Sharp Sans",
+    "fontWeight": 9,
+    "fontSize": 24,
+    "lineHeight": 26,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Heading XXS",
+    "fontFamily": "Firefox Sharp Sans",
+    "fontWeight": 9,
+    "fontSize": 16,
+    "lineHeight": 18,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Paragraph LG",
+    "fontFamily": "Inter",
+    "fontWeight": 5,
+    "fontSize": 18,
+    "lineHeight": 27,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Paragraph MD",
+    "fontFamily": "Inter",
+    "fontWeight": 5,
+    "fontSize": 16,
+    "lineHeight": 24,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Paragraph SM",
+    "fontFamily": "Inter",
+    "fontWeight": 5,
+    "fontSize": 14,
+    "lineHeight": 21,
+    "textColor": "#20123A"
+  },
+  {
+    "name": "Paragraph XS",
+    "fontFamily": "Inter",
+    "fontWeight": 5,
+    "fontSize": 12,
+    "lineHeight": 18,
+    "textColor": "#20123A"
+  }
+]

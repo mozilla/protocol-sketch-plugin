@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Novanta-Semibold",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 8,
+    "fontSize": 64,
+    "lineHeight": 70,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Ottanta-Semibold",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 8,
+    "fontSize": 56,
+    "lineHeight": 62,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Settanta-Semibold",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 8,
+    "fontSize": 48,
+    "lineHeight": 53,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Sessanta-Semibold",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 8,
+    "fontSize": 40,
+    "lineHeight": 44,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Cinquanta-Semibold",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 8,
+    "fontSize": 32,
+    "lineHeight": 35,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Quaranta-Semibold",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 8,
+    "fontSize": 24,
+    "lineHeight": 26,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Venti-Semibold",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 8,
+    "fontSize": 16,
+    "lineHeight": 18,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Trenta-Regular",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 4,
+    "fontSize": 20,
+    "lineHeight": 24,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Venti-Regular",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 4,
+    "fontSize": 16,
+    "lineHeight": 22,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Grande-Regular",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 4,
+    "fontSize": 14,
+    "lineHeight": 20,
+    "textColor": "#424242"
+  },
+  {
+    "name": "Tall-Regular",
+    "fontFamily": "Graphik LCG",
+    "fontWeight": 4,
+    "fontSize": 12,
+    "lineHeight": 18,
+    "textColor": "#424242"
+  }
+]

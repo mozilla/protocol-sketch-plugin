@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Text",
+    "value": "#000000"
+  },
+  {
+    "name": "Background",
+    "value": "#FFFFFF"
+  },
+  {
+    "name": "Link",
+    "value": "#0060DF"
+  },
+  {
+    "name": "Link (Visited)",
+    "value": "#9059FF"
+  },
+  {
+    "name": "Warm Red",
+    "value": "#FF4F5E"
+  },
+  {
+    "name": "Lemon Yellow",
+    "value": "#FFFF98"
+  },
+  {
+    "name": "Neon Green",
+    "value": "#54FFBD"
+  },
+  {
+    "name": "Neon Blue",
+    "value": "#00DDFF"
+  },
+  {
+    "name": "Dark Green",
+    "value": "#005E5E"
+  },
+  {
+    "name": "Dark Blue",
+    "value": "#073072"
+  },
+  {
+    "name": "Dark Purple",
+    "value": "#722291"
+  }
+]
