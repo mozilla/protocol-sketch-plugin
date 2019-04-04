@@ -218,6 +218,7 @@ export default function() {
   }
   
   // Gradient Fill
+  var r;
   for (r = 0; r < gradientData.length; r++) {
     
     var gradientStops;

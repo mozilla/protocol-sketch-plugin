@@ -41,12 +41,32 @@ var exports =
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
 /******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
 /******/ 	};
 /******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
@@ -64,54 +84,65 @@ var exports =
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
+/******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/scripts/clearstyles.js");
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ ({
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
+/***/ "./src/scripts/clearstyles.js":
+/*!************************************!*\
+  !*** ./src/scripts/clearstyles.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var sketch = __webpack_require__(/*! sketch */ "sketch");
+
+var UI = __webpack_require__(/*! sketch/ui */ "sketch/ui");
+
+var document = sketch.getSelectedDocument();
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  // UI Message
+  UI.message('color picker and layer styles were cleared'); // Clear Color Fill
+
+  document.colors = []; // Clear Gradient Fill
+
+  document.gradients = []; // Clear the Layer Styles
+
+  document.sharedLayerStyles = []; // Clear the Text Styles
+
+  document.sharedTextStyles = [];
 });
 
-exports['default'] = function () {
-
-  // UI Message
-  UI.message('color picker and layer styles were cleared');
-
-  // Clear Color Fill
-  document.colors = [];
-
-  // Clear Gradient Fill
-  document.gradients = [];
-
-  // Clear the Layer Styles
-  document.sharedLayerStyles = [];
-
-  // Clear the Text Styles
-  document.sharedTextStyles = [];
-};
-
-var sketch = __webpack_require__(1);
-var UI = __webpack_require__(2);
-var document = sketch.getSelectedDocument();
-
 /***/ }),
-/* 1 */
+
+/***/ "sketch":
+/*!*************************!*\
+  !*** external "sketch" ***!
+  \*************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = require("sketch");
 
 /***/ }),
-/* 2 */
+
+/***/ "sketch/ui":
+/*!****************************!*\
+  !*** external "sketch/ui" ***!
+  \****************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = require("sketch/ui");
 
 /***/ })
-/******/ ]);
+
+/******/ });
   if (key === 'default' && typeof exports === 'function') {
     exports(context);
   } else {
@@ -119,3 +150,5 @@ module.exports = require("sketch/ui");
   }
 }
 that['onRun'] = __skpm_run.bind(this, 'default')
+
+//# sourceMappingURL=clearstyles.js.map
