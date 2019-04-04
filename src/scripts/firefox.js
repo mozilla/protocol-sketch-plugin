@@ -5,26 +5,27 @@ var UI = require('sketch/ui')
 var Text = sketch.Text
 
 // Import Data
-var colorData = require('../data/firefox/color.json');
+var colorData;
 var colorStyleData = require('../data/firefox/colorstyle.json');
+var gradientData = require('../data/firefox/gradients.json');
 var imageData = require('../data/firefox/image.json');
 var textData = require('../data/firefox/text.json');
 
 
-
-// function onOpenDocument() {
-//     log('onSelectionChanged ran');
-//     UI.message('hmmm')
-// }
-export function onOpenDocument(context) {
-  UI.message('Document Opened')
-  document.colors = ['#000000']
+// Protocol Tokens
+try {
+    var url = NSURL.URLWithString("https://raw.githubusercontent.com/mozilla/protocol-tokens/master/dist/colors/colors.json");
+    var data = NSData.dataWithContentsOfURL(url);
+    colorData = NSJSONSerialization.JSONObjectWithData_options_error(data, 0, nil)
+    log('success')
+    UI.message('🔥 text styles, layer styles, and fills were updated!');
+} catch(e) {
+    colorData = require('../data/firefox/color.json');
+    log("Error: " + e);
+    UI.message('⚠️ You are either offline or something else went wrong!');
 }
 
 export default function() {
-  
-  // UI Message
-  UI.message('🔥 text styles, layer styles, and fills were updated!');
   
   // Clear Color Picker
   document.colors = []
@@ -211,15 +212,65 @@ export default function() {
   }
 
   var q;
-  for (q = 0; q < colorData.length; q++) {
-    // Color Picker
-    document.colors.push({name: colorData[q].name, color: colorData[q].value});
+  for (q = 0; q < 52; q++) {
+    // Color Fill
+    document.colors.push({name: String(colorData[q].name), color: String(colorData[q].value)});
+  }
+  
+  // Gradient Fill
+  for (r = 0; r < gradientData.length; r++) {
+    
+    var gradientStops;
+    
+    if (gradientData[r].gradient.stops.length == 2) {
+      gradientStops = [
+       { position: gradientData[r].gradient.stops[0].position, color: gradientData[r].gradient.stops[0].color},
+       { position: gradientData[r].gradient.stops[1].position, color: gradientData[r].gradient.stops[1].color}
+      ]
+    } else if (gradientData[r].gradient.stops.length == 3) {
+      gradientStops = [
+       { position: gradientData[r].gradient.stops[0].position, color: gradientData[r].gradient.stops[0].color},
+       { position: gradientData[r].gradient.stops[1].position, color: gradientData[r].gradient.stops[1].color},
+       { position: gradientData[r].gradient.stops[2].position, color: gradientData[r].gradient.stops[2].color}
+      ]
+    } else if (gradientData[r].gradient.stops.length == 4) {
+      gradientStops = [
+       { position: gradientData[r].gradient.stops[0].position, color: gradientData[r].gradient.stops[0].color},
+       { position: gradientData[r].gradient.stops[1].position, color: gradientData[r].gradient.stops[1].color},
+       { position: gradientData[r].gradient.stops[2].position, color: gradientData[r].gradient.stops[2].color},
+       { position: gradientData[r].gradient.stops[3].position, color: gradientData[r].gradient.stops[3].color}
+      ]
+    } else if (gradientData[r].gradient.stops.length == 5) {
+      gradientStops = [
+       { position: gradientData[r].gradient.stops[0].position, color: gradientData[r].gradient.stops[0].color},
+       { position: gradientData[r].gradient.stops[1].position, color: gradientData[r].gradient.stops[1].color},
+       { position: gradientData[r].gradient.stops[2].position, color: gradientData[r].gradient.stops[2].color},
+       { position: gradientData[r].gradient.stops[3].position, color: gradientData[r].gradient.stops[3].color},
+       { position: gradientData[r].gradient.stops[4].position, color: gradientData[r].gradient.stops[4].color}
+      ]
+    }
+    
+    document.gradients.push({
+     name: gradientData[r].name,
+     gradient: {
+       gradientType: Style.GradientType.Linear,
+       from: { 
+         x: gradientData[r].gradient.from.x, 
+         y: gradientData[r].gradient.from.y
+       },
+       to: { 
+         x: gradientData[r].gradient.to.x, 
+         y: gradientData[r].gradient.to.y
+       },
+       stops: gradientStops
+     },
+   });
   }
   
   // Text Styles
   if (document.sharedTextStyles.length === 0) {
-    var r;
-    for (r = 0; r < textData.length; r++) {
+    var s;
+    for (s = 0; s < textData.length; s++) {
       var text = new Text({
         text: 'my text',
         style: { 
@@ -227,27 +278,27 @@ export default function() {
           borders: [{
             enabled: false
           }],
-          fontFamily: textData[r].fontFamily,
-          fontSize: textData[r].fontSize,
-          fontWeight: textData[r].fontWeight,
-          lineHeight: textData[r].lineHeight,
-          textColor: textData[r].textColor
+          fontFamily: textData[s].fontFamily,
+          fontSize: textData[s].fontSize,
+          fontWeight: textData[s].fontWeight,
+          lineHeight: textData[s].lineHeight,
+          textColor: textData[s].textColor
         }
       })
 
       document.sharedTextStyles.push({
-        name: textData[r].name,
+        name: textData[s].name,
         style: text.style
       })
     }
   } else {
-    var s;
-    for (s = 0; s < textData.length; s++) {
-      document.sharedTextStyles[s].style.fontFamily = textData[s].fontFamily
-      document.sharedTextStyles[s].style.fontSize = textData[s].fontSize
-      document.sharedTextStyles[s].style.fontWeight = textData[s].fontWeight
-      document.sharedTextStyles[s].style.lineHeight = textData[s].lineHeight
-      document.sharedTextStyles[s].style.textColor = textData[s].textColor
+    var t;
+    for (t = 0; t < textData.length; t++) {
+      document.sharedTextStyles[t].style.fontFamily = textData[t].fontFamily
+      document.sharedTextStyles[t].style.fontSize = textData[t].fontSize
+      document.sharedTextStyles[t].style.fontWeight = textData[t].fontWeight
+      document.sharedTextStyles[t].style.lineHeight = textData[t].lineHeight
+      document.sharedTextStyles[t].style.textColor = textData[t].textColor
     }
   }
 }

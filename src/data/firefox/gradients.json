@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Warm Gradient",
+    "gradient": {
+      "from": { 
+        "x": 1, 
+        "y": 0 
+      },
+      "to": { 
+        "x": 0, 
+        "y": 1
+      },
+      "stops": [
+        { 
+          "position": 0, 
+          "color": "#FF980E"
+        },
+        { 
+          "position": 0.25, 
+          "color": "#FF7139"
+        },
+        { 
+          "position": 0.5, 
+          "color": "#FF4F5E"
+        },
+        { 
+          "position": 0.75, 
+          "color": "#FF3750"
+        },
+        { 
+          "position": 1, 
+          "color": "#F5156C"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cool Gradient",
+    "gradient": {
+      "from": { 
+        "x": 0.5, 
+        "y": 0 
+      },
+      "to": { 
+        "x": 0.5, 
+        "y": 1
+      },
+      "stops": [
+        {
+          "position": 0,
+          "color": "#C139E6"
+        },
+        {
+          "position": 0.5,
+          "color": "#9059FF"
+        },
+        {
+          "position": 1,
+          "color": "#3A8EE6"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Highlight Gradient",
+    "gradient": {
+      "from": { 
+        "x": 1, 
+        "y": 0
+      },
+      "to": { 
+        "x": 0.25, 
+        "y": 0.75
+      },
+      "stops": [
+        {
+          "position": 0,
+          "color": "#FFF44F"
+        },
+        {
+          "position": 1,
+          "color": "#FFF44F00"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Zap Gradient",
+    "gradient": {
+      "from": { 
+        "x": 1, 
+        "y": 0
+      },
+      "to": { 
+        "x": 0, 
+        "y": 1
+      },
+      "stops": [
+        {
+          "position": 0,
+          "color": "#FF9100"
+        },
+        {
+          "position": 0.5,
+          "color": "#F10366"
+        },
+        {
+          "position": 1,
+          "color": "#6173FF"
+        }
+      ]
+    }
+  }
+]

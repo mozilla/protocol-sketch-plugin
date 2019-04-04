@@ -81,8 +81,11 @@ exports['default'] = function () {
   // UI Message
   UI.message('color picker and layer styles were cleared');
 
-  // Clear Color Picker
+  // Clear Color Fill
   document.colors = [];
+
+  // Clear Gradient Fill
+  document.gradients = [];
 
   // Clear the Layer Styles
   document.sharedLayerStyles = [];
