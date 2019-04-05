@@ -3,7 +3,7 @@
     "name": "Heading XXL",
     "fontFamily": "Zilla Slab",
     "fontWeight": 9,
-    "fontSize": 71,
+    "fontSize": 70,
     "lineHeight": 70,
     "textColor": "#000000"
   },
@@ -43,7 +43,7 @@
     "name": "Heading XS",
     "fontFamily": "Zilla Slab",
     "fontWeight": 9,
-    "fontSize": 27,
+    "fontSize": 26,
     "lineHeight": 26,
     "textColor": "#000000"
   },

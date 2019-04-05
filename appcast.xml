@@ -6,15 +6,15 @@
     <description>Replaces the global color palette with Mozilla color palettes.</description>
     <language>en</language>
       <item>
-        <title>Version 3.0.0</title>
+        <title>Version 3.1.0</title>
         <description>
           <![CDATA[
             <ul>
-              <li>Major update v3.0</li>
+              <li>Major update v3.1</li>
             </ul>
           ]]>
         </description>
-        <enclosure url="https://github.com/mozilla/protocol-sketch-plugin/archive/master.zip" sparkle:version="3.0.0" />
+        <enclosure url="https://github.com/mozilla/protocol-sketch-plugin/archive/master.zip" sparkle:version="3.1.0" />
       </item>
   </channel>
 </rss>

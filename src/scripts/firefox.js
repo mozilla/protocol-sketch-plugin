@@ -5,27 +5,17 @@ var UI = require('sketch/ui')
 var Text = sketch.Text
 
 // Import Data
-var colorData;
+var colorData = require('../data/firefox/color.json');
+// var colorData = require('../../node_modules/@mozilla-protocol/tokens/dist/colors/colors.sketch.json');
 var colorStyleData = require('../data/firefox/colorstyle.json');
 var gradientData = require('../data/firefox/gradients.json');
 var imageData = require('../data/firefox/image.json');
 var textData = require('../data/firefox/text.json');
 
-
-// Protocol Tokens
-try {
-    var url = NSURL.URLWithString("https://raw.githubusercontent.com/mozilla/protocol-tokens/master/dist/colors/colors.json");
-    var data = NSData.dataWithContentsOfURL(url);
-    colorData = NSJSONSerialization.JSONObjectWithData_options_error(data, 0, nil)
-    log('success')
-    UI.message('🔥 text styles, layer styles, and fills were updated!');
-} catch(e) {
-    colorData = require('../data/firefox/color.json');
-    log("Error: " + e);
-    UI.message('⚠️ You are either offline or something else went wrong!');
-}
-
 export default function() {
+  
+  // UI Message
+  UI.message('🔥 text styles, layer styles, and fills were updated!');
   
   // Clear Color Picker
   document.colors = []
@@ -212,7 +202,7 @@ export default function() {
   }
 
   var q;
-  for (q = 0; q < 52; q++) {
+  for (q = 0; q < colorData.length; q++) {
     // Color Fill
     document.colors.push({name: String(colorData[q].name), color: String(colorData[q].value)});
   }

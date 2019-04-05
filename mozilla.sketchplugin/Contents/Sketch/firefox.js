@@ -164,7 +164,8 @@ var UI = __webpack_require__(/*! sketch/ui */ "sketch/ui");
 
 var Text = sketch.Text; // Import Data
 
-var colorData;
+var colorData = __webpack_require__(/*! ../data/firefox/color.json */ "./src/data/firefox/color.json"); // var colorData = require('../../node_modules/@mozilla-protocol/tokens/dist/colors/colors.sketch.json');
+
 
 var colorStyleData = __webpack_require__(/*! ../data/firefox/colorstyle.json */ "./src/data/firefox/colorstyle.json");
 
@@ -172,23 +173,12 @@ var gradientData = __webpack_require__(/*! ../data/firefox/gradients.json */ "./
 
 var imageData = __webpack_require__(/*! ../data/firefox/image.json */ "./src/data/firefox/image.json");
 
-var textData = __webpack_require__(/*! ../data/firefox/text.json */ "./src/data/firefox/text.json"); // Protocol Tokens
-
-
-try {
-  var url = NSURL.URLWithString("https://raw.githubusercontent.com/mozilla/protocol-tokens/master/dist/colors/colors.json");
-  var data = NSData.dataWithContentsOfURL(url);
-  colorData = NSJSONSerialization.JSONObjectWithData_options_error(data, 0, nil);
-  log('success');
-  UI.message('🔥 text styles, layer styles, and fills were updated!');
-} catch (e) {
-  colorData = __webpack_require__(/*! ../data/firefox/color.json */ "./src/data/firefox/color.json");
-  log("Error: " + e);
-  UI.message('⚠️ You are either offline or something else went wrong!');
-}
+var textData = __webpack_require__(/*! ../data/firefox/text.json */ "./src/data/firefox/text.json");
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  // Clear Color Picker
+  // UI Message
+  UI.message('🔥 text styles, layer styles, and fills were updated!'); // Clear Color Picker
+
   document.colors = []; // Clear all layer styles except for the logos and primary colors
 
   var remainingLayers = document.sharedLayerStyles.length;
@@ -369,7 +359,7 @@ try {
 
   var q;
 
-  for (q = 0; q < 52; q++) {
+  for (q = 0; q < colorData.length; q++) {
     // Color Fill
     document.colors.push({
       name: String(colorData[q].name),
