@@ -2,7 +2,7 @@
   "name": "mozilla-sketch-plugin",
   "description": "Adds Mozilla branded text styles, layer styles, and fills.",
   "author": "",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "repository": "https://github.com/mozilla/protocol-sketch-plugin",
   "engines": {
     "sketch": ">=54"
